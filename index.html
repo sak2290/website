@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Articles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4f8ef7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .profile h1 {
+            margin: 10px 0 0;
+        }
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .article-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .article-card img {
+            width: 100%;
+            height: auto;
+        }
+        .article-card .content {
+            padding: 15px;
+        }
+        .article-card h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        .article-card p {
+            font-size: 14px;
+            margin: 0 0 15px 0;
+        }
+        .article-card a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4f8ef7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .article-card a:hover {
+            background-color: #3c76d3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Research Articles</h1>
+    </header>
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Image">
+        <h1>Your Name</h1>
+    </div>
+    <section class="articles">
+        <!-- Example article card. Duplicate and update for each article -->
+        <div class="article-card">
+            <img src="articles/article1_page1.png" alt="Article 1 Preview">
+            <div class="content">
+                <h2>Article Title 1</h2>
+                <p>Brief description or abstract for article 1.</p>
+                <a href="articles/article1.pdf" target="_blank">Read Article</a>
+            </div>
+        </div>
+        <div class="article-card">
+            <img src="articles/article2_page1.png" alt="Article 2 Preview">
+            <div class="content">
+                <h2>Article Title 2</h2>
+                <p>Brief description or abstract for article 2.</p>
+                <a href="articles/article2.pdf" target="_blank">Read Article</a>
+            </div>
+        </div>
+        <!-- Add more article cards as needed -->
+    </section>
+</body>
+</html>
