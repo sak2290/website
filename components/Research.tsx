@@ -59,7 +59,7 @@ const ExplanationModal: React.FC<{
           </div>
         )}
         {error && <p className="text-red-500 bg-red-100 p-3 rounded-md" role="alert">{error}</p>}
-        {explanation && <p className="text-gray-600 leading-relaxed whitespace-pre-wrap">{explanation}</p>}
+        {!isLoading && !error && explanation && <p className="text-gray-600 leading-relaxed whitespace-pre-wrap">{explanation}</p>}
       </div>
     </div>
   );
@@ -88,7 +88,6 @@ const Research: React.FC<ResearchProps> = ({ projects }) => {
         } else {
             setError('An unknown error occurred. Please try again later.');
         }
-        console.error(e);
     } finally {
         setIsLoading(false);
     }

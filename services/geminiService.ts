@@ -3,7 +3,8 @@ import { GoogleGenAI } from "@google/genai";
 // No top-level initialization or error throwing.
 
 export const getSimpleExplanation = async (title: string, description: string): Promise<string> => {
-  const API_KEY = process.env.API_KEY;
+  // Safely check for 'process' to avoid ReferenceError in browser-only environments.
+  const API_KEY = typeof process !== 'undefined' ? process.env.API_KEY : undefined;
 
   if (!API_KEY) {
     // This message will be shown to the user in the UI.
