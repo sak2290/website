@@ -7,7 +7,6 @@ interface ContactProps {
   links: {
     googleScholar: string;
     linkedIn: string;
-
     twitter: string;
   };
 }
@@ -29,7 +28,6 @@ const Contact: React.FC<ContactProps> = ({ email, links }) => {
           <a href={links.googleScholar} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-gold transition-colors" title="Google Scholar">
             <GoogleScholarIcon className="w-8 h-8" />
           </a>
-          {/* FIX: Corrected property access from `links.linkedin` to `links.linkedIn` to match the interface. */}
           <a href={links.linkedIn} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-gold transition-colors" title="LinkedIn">
             <LinkedInIcon className="w-8 h-8" />
           </a>

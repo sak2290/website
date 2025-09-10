@@ -85,7 +85,6 @@ const Publications: React.FC<PublicationsProps> = ({ publications }) => {
         <div 
             ref={scrollContainer}
             className="flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory"
-            // FIX: Changed '-ms-overflow-style' to 'msOverflowStyle' to match React's camelCase syntax for CSS properties.
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {publications.map((pub, index) => (
